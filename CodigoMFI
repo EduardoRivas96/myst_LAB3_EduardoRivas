@@ -1,0 +1,7 @@
+
+library(readxl)
+AMX <- read_excel("C:/Users/lalor/Desktop/Otoño 2018/TRADING/AMX.xlsx")
+View(AMX)
+
+data(AMX)
+mfi <- MFI(AMX[,c("High","Low","Close")], AMX[,"Volume"])
